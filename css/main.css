@@ -1,0 +1,420 @@
+body, html{
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+
+a{
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    margin: 5px 15px;;
+}
+
+h4{
+    font-size: 1.3em;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.mlauto{
+    margin-left: auto;
+}
+
+.mrauto{
+    margin-right: auto;
+}
+
+.item{
+    width: 100%;
+    height: 560px;
+    background-size: 100% 100% !important;
+}
+
+.owl-dots{
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 36px);
+
+}
+
+.pl250{
+    padding-left: 250px; 
+}
+
+.pt80{
+    padding-top: 80px; 
+}
+
+.pt10{
+    padding-top: 10px; 
+}
+
+.fs50{
+    font-size: 2.5em;
+}
+
+.orange{
+    color: #b43b26
+}
+
+.grey{
+    color: #908f8f
+}
+
+.inblock{
+    display: inline-block;
+}
+.w80pc{
+    width: 80%; 
+}
+.bgorange{
+    background-color: #b43b26
+}
+
+.upper{
+    text-transform: uppercase;
+}
+
+.p90-360{
+    padding: 90px 360px; 
+}
+
+.tcenter{
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+}
+
+.button{
+    border: solid #b43b26 1px;
+    border-radius: 14px;
+    padding: 11px 20px;
+}
+
+.button:hover, .button:active{
+    border: solid #b43b26 1px !important;
+    background-color:  rgba(180,59,38,0.8) !important;
+}
+
+
+.button:focus{
+    box-shadow: none;
+}
+
+a:focus{
+    border-color: #012B30  !important;
+}
+
+a:hover{
+    color: #908f8f
+}
+
+.image-middle{
+    width: 100%;
+}
+
+.mauto{
+    margin: auto;
+}
+
+.mb20{
+    margin-bottom: 20px;
+}
+
+.blue{
+    color: #012B30;
+}
+
+.white{
+    color: white;
+}
+
+.bgwhite{
+    background-color: white;
+}
+
+.bggrey{
+    background-color: #e4e6e0;
+}
+
+#quem-somos{
+    padding: 20px 30px;
+}
+
+.p75-360{
+    padding: 75px 360px; 
+}
+
+#pilares{
+    padding: 90px 250px; 
+}
+
+.no-margin{
+    margin: 0px;
+}
+
+.p75-150{
+    padding: 75px 150px;
+}
+
+.bgblue{
+    background-color: #012B30;
+}
+
+.fsh4{
+    font-size: 3.5em;        
+}
+
+.unline{
+    text-decoration: underline
+}
+
+.hover:hover{
+    color: black;
+    cursor:pointer;
+}
+
+.p50{
+    padding: 50px;
+}
+
+.fs-clique-aqui{
+    font-size: 1.1em;
+}
+
+.fs-txt-formiga{
+    font-size: 1.6em;
+}
+
+.borda-nascido{
+    border: #b43b26 solid 1px;
+    border-radius: 35px;
+    padding: 25px;
+    width: 675px;
+    margin: auto;
+}
+
+.contato{
+    width: 590px;
+    margin: auto;
+}
+
+.fsrodape{
+    font-size:1em;
+}
+
+.rodape{
+    padding: 5px;    
+}
+
+.bgblack{
+    background-color: black
+}
+
+.formiga{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.aicenter{
+    align-items: center;
+}
+
+#quem-somos h3{
+    font-size: 4.8em;
+}
+
+#quem-somos .col-md-8{
+    padding: 0 35px;
+}
+
+#quem-somos p{
+    font-size: 1.2em;
+}
+
+#quem-somos{
+    font-size: 95%;
+}
+
+#iframe{
+    height: 700px;
+}
+
+.ptb65{
+    padding: 65px 0;
+}
+
+.numeros{
+    padding: 50px 20px;
+}
+
+.responsive{
+    display: none;
+    position: relative;
+}
+
+.bars{
+    padding: 5px 0px;
+}
+
+
+.slide2{
+    display: none;
+}
+
+.bg-menu-resp{
+    width: 130px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: white;    
+}
+
+.bg-menu-resp a {
+    color: #b43b26 !important;
+}
+
+.klaes{
+    cursor:pointer;
+}
+
+@media (max-width: 1500px){
+    .formiga{
+        width: 90%;
+    }
+    #pilares{
+        padding: 90px 180px; 
+    }
+}
+
+.dev{
+    margin: 0!important;
+    padding: 10px;
+}
+
+@media (max-width: 1300px){
+    .formiga{
+        width: 100%;
+    }
+    #quem-somos{
+        font-size: 75%;
+    }
+    #pilares{
+        padding: 90px 100px; 
+    }
+    #quem-somos p{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 970px){
+    #quem-somos{
+        font-size: 65%;
+    }
+    #pilares{
+        padding: 90px 20px; 
+    }
+    #quem-somos h3{
+        font-size: 4em;
+    }
+
+    .responsive{
+        display: block;
+    }
+
+    .no-responsive{
+        display: none;
+    }
+}
+
+@media (max-width: 767px){
+    .item{
+        height: 300px;
+    }
+
+    .contato{
+        width: 450px;
+    }
+
+    h3{
+        font-size: 1.5rem;
+    }
+
+    .ptb50-response{
+        padding: 50px 0;
+    }
+    
+    #selo{
+        padding: 50px 30px;
+    }
+
+    #quem-somos{
+        padding: 50px 10px;
+    } 
+
+    .formiga{
+        display: none;
+    }
+    #pilares{
+        padding: 50px 30px; 
+    }
+    #pilares>div>div{
+        padding: 10px;
+    }
+    #iframe{
+        height: 500px;
+    }
+
+    #quem-somos p {
+        font-size: 2em;
+        padding: 10px 0;
+    }
+
+    #pilares{
+        font-size: 125%;
+    }
+
+    #parceiros{
+        padding: 0;
+    }
+
+    .borda-nascido{
+        width: 100%;
+    }
+
+    nav img{
+        width: 75%;
+    }
+
+    html{
+        font-size:73%;
+    }
+    button.navbar-toggler.bgwhite{
+        padding: 2px 8px;
+    }
+
+    .mb30-response{
+        margin-bottom: 30px;
+    }
+
+    .p30-response{
+        padding: 30px;
+    }
+
+    .contato {
+        width: 85%;
+    }
+}
+
+@media (max-width: 575px){
+    .contato {
+        width: 242px;
+    }
+}
