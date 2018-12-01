@@ -29,7 +29,8 @@ h4{
 
 .item{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     background-size: 100% 100% !important;
     background-attachment: fixed;
 }
@@ -321,6 +322,9 @@ a:hover{
     #quem-somos p{
         font-size: 1.4em;
     }
+    .item{
+        min-height: 70vh;
+    }
 }
 
 @media (max-width: 970px){
@@ -341,11 +345,19 @@ a:hover{
     .no-responsive{
         display: none;
     }
+
+    .item{
+        min-height: 50vh;
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media (max-width: 767px){
     .item{
-        height: 100vh;
+        min-height: 50vh;
+        width: 100%;
+        height: auto;
     }
 
     .contato{
