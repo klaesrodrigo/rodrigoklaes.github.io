@@ -12,13 +12,12 @@ $("a.menu").click(function () {
     var elemento = $(this).attr('href');
     $('html, body').animate({
         scrollTop: $(elemento).offset().top
-    }, 500);
+    }, 800);
 });
 
 setTimeout(() => {
-    console.log("oi");
     $("#iframe").prop("hidden", false);
-}, 2000)
+}, 2500)
 
 let bool = true;
 $(document).scroll(() => {
@@ -34,5 +33,7 @@ $(document).scroll(() => {
 $('.klaes').on('click', () =>{
     window.location.href = "https://github.com/rodrigoklaes";
 });
+
+
 
 

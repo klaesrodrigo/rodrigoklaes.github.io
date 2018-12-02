@@ -96,6 +96,8 @@ h4{
     border: solid #b43b26 1px;
     border-radius: 14px;
     padding: 11px 20px;
+    margin-right: auto;
+    display: block;
 }
 
 .button:hover, .button:active{
@@ -224,6 +226,10 @@ a:hover{
     margin: auto;
 }
 
+.icones{
+    vertical-align: initial    
+}
+
 .aicenter{
     align-items: center;
 }
@@ -293,6 +299,12 @@ a:hover{
     left: 0;
     right: 0;
     z-index: 2;
+}
+
+.empresa{
+    margin: auto;
+    display: block;
+    border: 3px white;
 }
 
 @media (max-width: 1500px){
