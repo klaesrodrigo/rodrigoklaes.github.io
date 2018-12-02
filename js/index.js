@@ -31,7 +31,7 @@ $(document).scroll(() => {
 });
 
 $('.klaes').on('click', () =>{
-    window.location.href = "https://github.com/rodrigoklaes";
+    window.open("https://github.com/rodrigoklaes");
 });
 
 
