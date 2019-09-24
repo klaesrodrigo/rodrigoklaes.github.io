@@ -31,7 +31,7 @@ $(document).scroll(() => {
 });
 
 $('.klaes').on('click', () =>{
-    window.open("https://github.com/rodrigoklaes");
+    window.open("https://www.linkedin.com/in/klaesrodrigo/");
 });
 
 
