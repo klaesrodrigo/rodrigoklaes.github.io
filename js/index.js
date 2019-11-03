@@ -34,6 +34,11 @@ $('.klaes').on('click', () =>{
     window.open("https://www.linkedin.com/in/klaesrodrigo/");
 });
 
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-15017193-10');
 
 
 
