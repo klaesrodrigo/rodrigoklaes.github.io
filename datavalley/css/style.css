@@ -6125,8 +6125,8 @@ li.home:before {
   height: 150px;
   margin: -75px 0 0 -75px;
   border-radius: 50%;
-  border: 3px solid transparent;
-  border-top-color: #3498db;
+  border: 5px solid transparent;
+  border-top-color: #0288d1;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
   z-index: 1001;
@@ -6140,8 +6140,8 @@ li.home:before {
   right: 5px;
   bottom: 5px;
   border-radius: 50%;
-  border: 3px solid transparent;
-  border-top-color: #e74c3c;
+  border: 5px solid transparent;
+  border-top-color: #b43b26;
   -webkit-animation: spin 3s linear infinite;
   animation: spin 3s linear infinite;
 }
@@ -6154,7 +6154,7 @@ li.home:before {
   right: 15px;
   bottom: 15px;
   border-radius: 50%;
-  border: 3px solid transparent;
+  border: 5px solid transparent;
   border-top-color: #f9c922;
   -webkit-animation: spin 1.5s linear infinite;
   animation: spin 1.5s linear infinite;
@@ -7480,4 +7480,12 @@ tr.group:hover {
 
 #polar-chart-holder {
   padding-top: 20px;
+}
+
+.candy_color{
+  color: #b43b26;
+}
+
+.candy_background_color{
+  background-color: #b43b26;
 }

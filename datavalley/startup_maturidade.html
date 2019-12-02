@@ -25,6 +25,7 @@
     <!-- CORE CSS-->
     <link href="css//materialize.css" type="text/css" rel="stylesheet">
     <link href="css//style.css" type="text/css" rel="stylesheet">
+    <link href="css//chart.min.css" type="text/css" rel="stylesheet">
     <!-- Custome CSS-->
     <link href="css/custom/custom.css" type="text/css" rel="stylesheet">
     <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
@@ -51,7 +52,6 @@
                 <h1 class="logo-wrapper">
                   <a href="index.html" class="brand-logo darken-1">
                     <img src="images/logo/candy_valley_white.svg" alt="materialize logo">
-
                   </a>
                 </h1>
               </li>
@@ -67,7 +67,6 @@
                 </a>
               </li>
             </ul>
-
           </div>
         </nav>
       </div>
@@ -106,13 +105,13 @@
                     <span class="nav-text">Mapa empreendedor</span>
                   </a>
                 </li>
-                <li class="bold active">
+                <li class="bold">
                   <a href="startup_lista.html" class="waves-effect waves-cyan">
                     <i class="material-icons">people</i>
                     <span class="nav-text">Encontre as startups</span>
                   </a>
                 </li>
-                <li class="bold">
+                <li class="bold active">
                   <a href="startup_maturidade.html" class="waves-effect waves-cyan">
                     <i class="material-icons">insert_chart_outlined</i>
                     <span class="nav-text">Maturidade</span>
@@ -193,7 +192,6 @@
                   <label>Relação de negócio</label>
                 </div>
               </div>
-
             </div>
 
             <div id="card-stats">
@@ -246,22 +244,52 @@
               </div>
             </div>
 
-            <!--work collections start-->
-            <div id="work-collections">
+            <!--card widgets start-->
+            <div id="card-widgets">
               <div class="row">
-                <div class="col s12 m12">
-                  <ul id="startup_collection" class="collection z-depth-1">
-                    <!--<li class="collection-item avatar">
-                      <i class="material-icons cyan circle">store_mall_directory</i>
-                      <h6 class="collection-header m-0">Startups</h6>
-                      <p>Participantes do Formigueiro</p>
-                    </li>
-                    -->
-                  </ul>
+
+                <div class="col s12">
+                  <h5>Maturidade</h5>
                 </div>
+
+
+                <div class="col s12 m9" style="min-height: 500px">
+                  <canvas id="chart-area-maturities"></canvas>
+                </div>
+
+                <div class="col hide-on-small-and-down m3">
+                  <p>
+                    <b>Zero</b>: Quando o próprio fundador faz.
+                  </p>
+                  <p>
+                    <b>Três</b>: Quando há processos, mas não há pessoa dedicada ao processo.
+                  </p>
+                  <p>
+                    <b>Cinco</b>: Quando há pessoa/equipe com processos dedicada para a área ou com expertise.
+                  </p>
+                </div>
+
+                <div class="col hide-on-med-and-up s12">
+                  <p>
+                    <b>Zero</b>: Quando o próprio fundador faz.
+                  </p>
+                  <p>
+                    <b>Três</b>: Quando há processos, mas não há pessoa dedicada ao processo.
+                  </p>
+                  <p>
+                    <b>Cinco</b>: Quando há pessoa/equipe com processos dedicada para a área ou com expertise.
+                  </p>
+                </div>
+
+                
               </div>
             </div>
+            <!--card widgets end-->
+
+            <!--work collections start-->
+
             <!--work collections end-->
+            
             <!-- //////////////////////////////////////////////////////////////////////////// -->
           </div>
           <!--end container-->
@@ -314,9 +342,8 @@
             <span>Copyright ©
               <script type="text/javascript">
                 document.write(new Date().getFullYear());
-              </script> <a class="grey-text text-lighten-2" href="http://candyvalley.com.br" target="_blank">Candy Valley</a>
-            </span>
-            <span class="right hide-on-small-only"> Compilado em <span id="compiled_at">27 de Nov. 2019</span>
+              </script> <a class="grey-text text-lighten-2" href="http://candyvalley.com.br" target="_blank">Candy Valley</a></span>
+              <span class="right hide-on-small-only"> Compilado em <span id="compiled_at">27 de Nov. 2019</span>
           </div>
         </div>
     </footer>
@@ -332,7 +359,10 @@
     <script type="text/javascript" src="vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
     <!--plugins.js - Some Specific JS codes for Plugin Settings-->
     <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/chart.min.js"></script>
+
     <!--custom-script.js - Add your own theme custom JS-->
     <script type="text/javascript" src="js/custom-script.js"></script>
+
   </body>
 </html>
