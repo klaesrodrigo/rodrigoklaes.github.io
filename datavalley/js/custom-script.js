@@ -20,6 +20,12 @@ var infowindow = null;
 
 $(document).ready(function(){
 
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-15017193-10');
+
     if(document.getElementById('compiled_at') != null){
         $('#compiled_at').html(datavalley.metadata.compiled_at)
     }
