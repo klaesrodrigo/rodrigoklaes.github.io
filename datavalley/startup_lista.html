@@ -132,7 +132,7 @@
                 </li>
                 <li>
                   <a class="btn waves-effect waves-light" href="http://candyvalley.com.br/#pricing" target="_blank">
-                    <i class="material-icons white-text">assignment_ind</i>Participe!
+                    <i class="material-icons white-text">assignment_ind</i>Participe
                   </a>
                 </li>
               </ul>
@@ -158,7 +158,7 @@
               </div>
               <div id="filter_itens" class="row" style="display: none">
                 <div class="input-field col s2">
-                  <select id="filter_cities">
+                  <select id="filter_cities" onchange="updateDataValley()">
                     <option value="all" selected>Todas</option>
                     <option value="pelotas">Pelotas</option>
                     <option value="riogrande">Rio Grande</option>
@@ -166,7 +166,7 @@
                   <label>Cidades</label>
                 </div>
                 <div class="input-field col s2">
-                  <select id="filter_incubators">
+                  <select disabled id="filter_incubators">
                     <option value="all" selected>Todas</option>
                     <option value="sim">Sim</option>
                     <option value="no">Não</option>
@@ -174,7 +174,7 @@
                   <label>Já foi incubada</label>
                 </div>
                 <div class="input-field col s2">
-                  <select id="filter_investment">
+                  <select disabled id="filter_investment">
                     <option value="all" selected>Todas</option>
                     <option value="yes">Sim</option>
                     <option value="no">Não</option>
@@ -182,7 +182,7 @@
                   <label>Já teve investimento</label>
                 </div>
                 <div class="input-field col s2">
-                  <select id="filter_accelerated">
+                  <select disabled id="filter_accelerated">
                     <option value="all" selected>Todas</option>
                     <option value="yes">Sim</option>
                     <option value="no">Não</option>
@@ -190,7 +190,7 @@
                   <label>Já foi acelerada</label>
                 </div>
                 <div class="input-field col s2">
-                  <select multiple id="filter_relationship">
+                  <select disabled multiple id="filter_relationship">
                     <option value="all" selected>Todas</option>
                     <option value="b2g">B2G</option>
                     <option value="b2b">B2B</option>
@@ -204,7 +204,7 @@
 
             <div id="card-stats">
               <div class="row mt-1">
-                <div class="col s12 m4 l4">
+                <div class="col s6 m6 l6">
                   <div class="card gradient-45deg-light-blue-cyan gradient-shadow min-height-100 white-text">
                     <div class="padding-4">
                       <div class="col s7 m7">
@@ -219,7 +219,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col s12 m4 l4">
+                <div class="col s6 m6 l6">
                   <div class="card gradient-45deg-purple-deep-orange gradient-shadow min-height-100 white-text">
                     <div class="padding-4">
                       <div class="col s7 m7">
@@ -228,21 +228,6 @@
                       </div>
                       <div class="col s5 m5 right-align">
                         <h5 id="number_statups_people" class="mb-0">483</h5>
-                        <p class="no-margin"></p>
-                        <p></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col s12 m4 l4">
-                  <div class="card gradient-45deg-amber-amber gradient-shadow min-height-100 white-text">
-                    <div class="padding-4">
-                      <div class="col s7 m7">
-                        <i class="material-icons background-round mt-5">map</i>
-                        <p>Cidades</p>
-                      </div>
-                      <div class="col s5 m5 right-align">
-                        <h5 id="number_cities" class="mb-0">25</h5>
                         <p class="no-margin"></p>
                         <p></p>
                       </div>

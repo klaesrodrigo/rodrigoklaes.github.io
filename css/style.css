@@ -845,7 +845,7 @@ h6 {
 /* Icon Right */
 
 .icon-right .icon {
-    right: 15;
+    right: 15px;
 }
 
 .icon-right .icon-block-description {
@@ -998,7 +998,7 @@ blockquote {
     font-style: normal;
     font-weight: normal;
     text-align: center;
-    content: "+";
+    content: "ver";
     width: 70px;
     height: 70px;
     border-radius: 100em;
