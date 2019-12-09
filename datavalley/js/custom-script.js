@@ -183,6 +183,16 @@ function updateDataValley(){
         updateCandyMap()
     }
 
+    if(document.getElementById('startup_word_cloud') != null){
+        if($('#filter_cities').val() == "pelotas"){
+            $('#startup_word_cloud img').attr('src','images/word_cloud/word_cloud_candy_valley_pel.png')
+        }else if($('#filter_cities').val() == "riogrande"){
+            $('#startup_word_cloud img').attr('src','images/word_cloud/word_cloud_candy_valley_rg.png')
+        }else{
+            $('#startup_word_cloud img').attr('src','images/word_cloud/word_cloud_candy_valley.png')
+        }
+    }
+
 
 }
 
