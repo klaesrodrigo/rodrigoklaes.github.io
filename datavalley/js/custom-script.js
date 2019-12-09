@@ -47,7 +47,8 @@ if(location.search != ""){
 function updateDataValley(){
 
     if(document.getElementById('compiled_at') != null){
-        $('#compiled_at').html(datavalley.metadata.compiled_at)
+        $('#compiled_at').html(datavalley.metadata.compiled_at);
+        $('#compiled_by').html(datavalley.metadata.compiled_by);
     }
 
     if(document.getElementById('number_startups') != null){
