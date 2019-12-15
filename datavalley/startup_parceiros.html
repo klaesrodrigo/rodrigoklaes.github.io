@@ -23,6 +23,7 @@
     <meta name="msapplication-TileImage" content="images/favicon/apple-icon-114x114.png">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-15017193-10"></script>
+
     <!-- For Windows Phone -->
     <!-- CORE CSS-->
     <link href="css//materialize.css" type="text/css" rel="stylesheet">
@@ -33,8 +34,6 @@
     <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
     <link href="vendors/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet">
     <link href="vendors/flag-icon/css/flag-icon.min.css" type="text/css" rel="stylesheet">
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-15017193-10"></script>
   </head>
   <body>
     <!-- Start Page Loading -->
@@ -99,9 +98,9 @@
               <ul class="collapsible" data-collapsible="accordion">
                 <li class="bold">
                   <a href="index.html" class="waves-effect waves-cyan">
-                    <i class="material-icons">pie_chart_outlined</i>
-                    <span class="nav-text">Dashboard</span>
-                  </a>
+                      <i class="material-icons">pie_chart_outlined</i>
+                      <span class="nav-text">Dashboard</span>
+                    </a>
                 </li>
                 <li class="bold">
                   <a href="startup_map.html" class="waves-effect waves-cyan">
@@ -121,13 +120,13 @@
                     <span class="nav-text">Maturidade</span>
                   </a>
                 </li>
-                <li class="bold">
+                <li class="bold active">
                   <a href="startup_parceiros.html" class="waves-effect waves-cyan">
                     <i class="material-icons">nature_people</i>
                     <span class="nav-text">Parceiros</span>
                   </a>
                 </li>
-                <li class="bold active">
+                <li class="bold">
                   <a href="startup_word_cloud.html" class="waves-effect waves-cyan">
                     <i class="material-icons">bubble_chart</i>
                     <span class="nav-text">Mapa de Palavras</span>
@@ -135,7 +134,7 @@
                 </li>
                 <li>
                   <a class="btn waves-effect waves-light" href="http://candyvalley.com.br/#pricing" target="_blank">
-                    <i class="material-icons white-text">assignment_ind</i>Participe
+                    <i class="material-icons white-text">assignment_ind</i>Participe!
                   </a>
                 </li>
               </ul>
@@ -206,7 +205,7 @@
 
             <div id="card-stats">
               <div class="row mt-1">
-                <div class="col s6 m6 l6">
+                <div class="col s6 m6 l4">
                   <div class="card gradient-45deg-light-blue-cyan gradient-shadow min-height-100 white-text">
                     <div class="padding-4">
                       <div class="col s7 m7">
@@ -214,14 +213,14 @@
                         <p>Startups</p>
                       </div>
                       <div class="col s5 m5 right-align">
-                        <h5 id="number_startups" class="mb-0">690</h5>
+                        <h5 id="number_partiners" class="mb-0">9</h5>
                         <p class="no-margin"></p>
                         <p></p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col s6 m6 l6">
+                <div class="col s6 m6 l4">
                   <div class="card gradient-45deg-purple-deep-orange gradient-shadow min-height-100 white-text">
                     <div class="padding-4">
                       <div class="col s7 m7">
@@ -229,7 +228,22 @@
                         <p>Pessoas</p>
                       </div>
                       <div class="col s5 m5 right-align">
-                        <h5 id="number_statups_people" class="mb-0">483</h5>
+                        <h5 id="number_partners_people" class="mb-0">?</h5>
+                        <p class="no-margin"></p>
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s6 m6 l4">
+                  <div class="card gradient-45deg-amber-amber gradient-shadow min-height-100 white-text">
+                    <div class="padding-4">
+                      <div class="col s7 m7">
+                        <i class="material-icons background-round mt-5">map</i>
+                        <p>Cidades</p>
+                      </div>
+                      <div class="col s5 m5 right-align">
+                        <h5 id="number_cities" class="mb-0">25</h5>
                         <p class="no-margin"></p>
                         <p></p>
                       </div>
@@ -244,11 +258,37 @@
               <div class="row">
 
                 <div class="col s12">
-                  <h5>Núvem de palavras</h5>
+                  <h5>Relação das startups</h5>
                 </div>
 
-                <div class="col s12" id="startup_word_cloud">
-                  <img style="width: 100%;height: auto" src="images/word_cloud/word_cloud_candy_valley.png">
+                <div class="col s12 m12 l6">
+                  <div id="flight-card" class="card">
+                    <div class="card-header cyan">
+                      <div class="card-title">
+                        <h4 class="flight-card-title">Incubadoras<i style="cursor: help" class="right material-icons tooltipped" data-tooltip="Qual incubadora você está/esteve?">info_outline</i></h4>
+                      </div>
+                    </div>
+                    <div class="card-content-bg white-text" style="background: url(images/gallary/8.png) no-repeat center center;">
+                      <div class="card-content" style="min-height: 300px;">
+                        <canvas id="chart-area-partners-incubators"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col s12 m12 l6">
+                  <div id="flight-card" class="card">
+                    <div class="card-header candy_background_color" >
+                      <div class="card-title">
+                        <h4 class="flight-card-title">Parques<i style="cursor: help" class="right material-icons tooltipped" data-tooltip="Qual parque tecnológico sua startup está/esteve?">info_outline</i></h4>
+                      </div>
+                    </div>
+                    <div class="card-content-bg white-text" style="background: url(images/gallary/24.png) no-repeat center center;">
+                      <div class="card-content" style="min-height: 300px;">
+                        <canvas id="chart-area-partners-parks"></canvas>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
               </div>
@@ -312,7 +352,7 @@
               <script type="text/javascript">
                 document.write(new Date().getFullYear());
               </script> <a class="grey-text text-lighten-2" href="http://candyvalley.com.br" target="_blank">Candy Valley</a></span>
-              <span class="right hide-on-small-only"> Compilado em <span id="compiled_at">27 de Nov. 2019</span>
+            <span class="right hide-on-small-only"> Atualizado em <span id="compiled_at">27 de Nov. 2019</span> por <span id="compiled_by"></span>
           </div>
         </div>
     </footer>
@@ -332,10 +372,6 @@
 
     <!--custom-script.js - Add your own theme custom JS-->
     <script type="text/javascript" src="js/custom-script.js"></script>
-
-    <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0-lFB0heI5kjEhRlOL-CEYAC4JpEqNGo&callback=initMap">
-    </script>
 
   </body>
 </html>

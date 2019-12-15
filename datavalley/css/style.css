@@ -7166,6 +7166,7 @@ Cards
   -moz-border-radius: 2px;
   border-radius: 2px;
   background-clip: padding-box;
+  margin-left: 2px;
 }
 
 .collection .collection-item.avatar i.circle {
